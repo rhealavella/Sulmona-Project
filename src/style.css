@@ -18,7 +18,12 @@ header {
 }
 
 footer {
+  background-image: url(../img/footer.jpeg);
   padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
 header h1 {
