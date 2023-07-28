@@ -7,6 +7,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(../img/header.png);
@@ -16,14 +21,48 @@ header {
   text-align: center;
   padding: 250px;
 }
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
 
 footer {
-  background-image: url(../img/footer.jpeg);
-  padding-top: 30px;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(../img/footer.jpeg);
+  padding: 100px 90px;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  text-align: center;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer a {
+  text-decoration: underline;
+  color: white;
+  opacity: 0.7;
+}
+footer a:visited {
+  color: white;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+}
+footer li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul {
+  padding: 0;
 }
 
 header h1 {
@@ -61,7 +100,7 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
