@@ -132,6 +132,9 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+.img-responsive {
+  max-width: 100%;
+}
 
 @media (max-width: 960px) {
   header {
