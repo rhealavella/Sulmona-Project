@@ -207,34 +207,40 @@ header a {
   aspect-ratio: 1/1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
+  .container {
+    padding: 0;
+  }
   header {
     padding: 60px 0;
   }
+
   header h1 {
     font-size: 48px;
   }
+
   header h2 {
     font-size: 20px;
   }
+
   header h3 {
     font-size: 12px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
+
   section {
-    padding: 12px;
+    padding: 30px;
   }
+
   .card-header img {
     display: none;
   }
+
   .embed {
-    aspect-ratio: 16/9;
-  }
-  blockquote {
-    margin: 0 auto;
-    display: block;
+    aspect-ratio: 16 / 9;
   }
 }
